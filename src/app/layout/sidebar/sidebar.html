@@ -23,6 +23,7 @@
         class="navigation-item"
         routerLink="/dashboard"
         routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
       >
         <mat-icon>dashboard</mat-icon>
         <span>Dashboard</span>
@@ -40,6 +41,7 @@
         class="navigation-item"
         routerLink="/tickets"
         routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
       >
         <mat-icon>confirmation_number</mat-icon>
         <span>Tickets</span>
@@ -49,17 +51,28 @@
         class="navigation-item"
         routerLink="/clients"
         routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
       >
         <mat-icon>business</mat-icon>
         <span>Clientes</span>
       </a>
 
-      <a class="navigation-item" href="javascript:void(0)">
+      <a
+        class="navigation-item"
+        routerLink="/queue"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
         <mat-icon>queue</mat-icon>
         <span>Fila de atendimento</span>
       </a>
 
-      <a class="navigation-item" href="javascript:void(0)">
+      <a
+        class="navigation-item"
+        routerLink="/sla"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
         <mat-icon>speed</mat-icon>
         <span>SLA</span>
       </a>
@@ -72,12 +85,18 @@
         GESTÃO
       </span>
 
-      <a class="navigation-item" href="javascript:void(0)">
+      <a
+        class="navigation-item"
+        href="javascript:void(0)"
+      >
         <mat-icon>bar_chart</mat-icon>
         <span>Relatórios</span>
       </a>
 
-      <a class="navigation-item" href="javascript:void(0)">
+      <a
+        class="navigation-item"
+        href="javascript:void(0)"
+      >
         <mat-icon>analytics</mat-icon>
         <span>Indicadores</span>
       </a>
@@ -90,7 +109,10 @@
         SISTEMA
       </span>
 
-      <a class="navigation-item" href="javascript:void(0)">
+      <a
+        class="navigation-item"
+        href="javascript:void(0)"
+      >
         <mat-icon>settings</mat-icon>
         <span>Configurações</span>
       </a>

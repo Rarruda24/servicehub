@@ -1,0 +1,209 @@
+<section class="sla-page">
+
+  <div class="page-header">
+
+    <div>
+      <span class="section-eyebrow">GESTÃO</span>
+      <h1>SLA</h1>
+      <p>Acompanhe o cumprimento dos acordos de nível de serviço.</p>
+    </div>
+
+    <div class="header-actions">
+      <button class="secondary-action" type="button">
+        <mat-icon>refresh</mat-icon>
+        Atualizar
+      </button>
+
+      <button class="primary-action" type="button">
+        <mat-icon>add</mat-icon>
+        Nova política
+      </button>
+    </div>
+
+  </div>
+
+  <section class="metrics">
+
+    <article class="metric">
+      <span class="metric-label">Cumprimento geral</span>
+      <strong>94,8%</strong>
+      <span class="metric-meta positive">
+        <mat-icon>trending_up</mat-icon>
+        +2,4% no período
+      </span>
+    </article>
+
+    <article class="metric">
+      <span class="metric-label">Dentro do SLA</span>
+      <strong>182</strong>
+      <span class="metric-meta">Tickets no período</span>
+    </article>
+
+    <article class="metric">
+      <span class="metric-label">Próximos do limite</span>
+      <strong>7</strong>
+      <span class="metric-meta warning">Requer atenção</span>
+    </article>
+
+    <article class="metric">
+      <span class="metric-label">SLA excedido</span>
+      <strong>3</strong>
+      <span class="metric-meta danger">Em acompanhamento</span>
+    </article>
+
+  </section>
+
+  <div class="content-grid">
+
+    <section class="panel">
+
+      <div class="panel-header">
+
+        <div>
+          <span class="section-eyebrow">MONITORAMENTO</span>
+          <h2>Tickets em risco</h2>
+          <p>Chamados que exigem acompanhamento.</p>
+        </div>
+
+        <button class="text-action" type="button">
+          Ver todos
+          <mat-icon>arrow_forward</mat-icon>
+        </button>
+
+      </div>
+
+      <div class="ticket-list">
+
+        <article class="ticket-row">
+
+          <div class="ticket-reference">#1028</div>
+
+          <div class="ticket-content">
+            <strong>Falha na sincronização de dados</strong>
+            <span>Northline Services · Alta prioridade</span>
+          </div>
+
+          <div class="ticket-sla warning">
+            <span>Restante</span>
+            <strong>18 min</strong>
+          </div>
+
+          <button class="row-action" type="button" aria-label="Abrir ticket">
+            <mat-icon>chevron_right</mat-icon>
+          </button>
+
+        </article>
+
+        <article class="ticket-row">
+
+          <div class="ticket-reference">#1027</div>
+
+          <div class="ticket-content">
+            <strong>Usuário sem acesso ao sistema</strong>
+            <span>Alpha Commerce · Alta prioridade</span>
+          </div>
+
+          <div class="ticket-sla warning">
+            <span>Restante</span>
+            <strong>32 min</strong>
+          </div>
+
+          <button class="row-action" type="button" aria-label="Abrir ticket">
+            <mat-icon>chevron_right</mat-icon>
+          </button>
+
+        </article>
+
+        <article class="ticket-row">
+
+          <div class="ticket-reference">#1021</div>
+
+          <div class="ticket-content">
+            <strong>Integração indisponível</strong>
+            <span>Vertex Solutions · Alta prioridade</span>
+          </div>
+
+          <div class="ticket-sla danger">
+            <span>Excedido</span>
+            <strong>14 min</strong>
+          </div>
+
+          <button class="row-action" type="button" aria-label="Abrir ticket">
+            <mat-icon>chevron_right</mat-icon>
+          </button>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <aside class="panel policies">
+
+      <div class="panel-header">
+        <div>
+          <span class="section-eyebrow">CONFIGURAÇÃO</span>
+          <h2>Políticas de SLA</h2>
+          <p>Regras atualmente utilizadas.</p>
+        </div>
+      </div>
+
+      <div class="policy-list">
+
+        <article class="policy">
+
+          <div class="policy-icon">
+            <mat-icon>priority_high</mat-icon>
+          </div>
+
+          <div class="policy-content">
+            <strong>Alta prioridade</strong>
+            <span>Primeira resposta em 30 min</span>
+          </div>
+
+          <span class="policy-status">Ativa</span>
+
+        </article>
+
+        <article class="policy">
+
+          <div class="policy-icon">
+            <mat-icon>schedule</mat-icon>
+          </div>
+
+          <div class="policy-content">
+            <strong>Média prioridade</strong>
+            <span>Primeira resposta em 2h</span>
+          </div>
+
+          <span class="policy-status">Ativa</span>
+
+        </article>
+
+        <article class="policy">
+
+          <div class="policy-icon">
+            <mat-icon>low_priority</mat-icon>
+          </div>
+
+          <div class="policy-content">
+            <strong>Baixa prioridade</strong>
+            <span>Primeira resposta em 8h</span>
+          </div>
+
+          <span class="policy-status">Ativa</span>
+
+        </article>
+
+      </div>
+
+      <button class="manage-button" type="button">
+        Gerenciar políticas
+        <mat-icon>arrow_forward</mat-icon>
+      </button>
+
+    </aside>
+
+  </div>
+
+</section>
