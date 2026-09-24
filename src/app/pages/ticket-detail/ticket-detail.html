@@ -1,0 +1,336 @@
+<section class="ticket-detail">
+
+  <div class="page-header">
+
+    <div class="header-main">
+
+      <button
+        class="back-button"
+        type="button"
+        aria-label="Voltar para tickets"
+      >
+        <mat-icon>arrow_back</mat-icon>
+      </button>
+
+      <div class="heading-content">
+
+        <div class="ticket-meta">
+          <span class="ticket-number">#1024</span>
+          <span class="status status-open">Aberto</span>
+          <span class="priority priority-high">
+            <span class="priority-dot"></span>
+            Alta
+          </span>
+        </div>
+
+        <h1>Falha na comunicação do TEF</h1>
+
+        <p>
+          Problema durante transação com cartão.
+          Aberto há 2 horas pelo cliente.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="header-actions">
+
+      <button class="secondary-action" type="button">
+        <mat-icon>more_horiz</mat-icon>
+        Ações
+      </button>
+
+      <button class="primary-action" type="button">
+        <mat-icon>check</mat-icon>
+        Resolver ticket
+      </button>
+
+    </div>
+
+  </div>
+
+  <div class="ticket-layout">
+
+    <main class="ticket-main">
+
+      <section class="content-section">
+
+        <div class="section-header">
+          <div>
+            <span class="section-eyebrow">SOLICITAÇÃO</span>
+            <h2>Descrição</h2>
+          </div>
+        </div>
+
+        <div class="description">
+
+          <p>
+            O cliente informou que o terminal está apresentando falha
+            durante a comunicação com o TEF ao realizar uma venda.
+          </p>
+
+          <p>
+            Segundo o relato, a transação é iniciada normalmente,
+            porém o processo é interrompido antes da conclusão.
+          </p>
+
+        </div>
+
+      </section>
+
+      <section class="content-section conversation-section">
+
+        <div class="section-header">
+          <div>
+            <span class="section-eyebrow">ATENDIMENTO</span>
+            <h2>Conversa</h2>
+          </div>
+
+          <span class="message-count">
+            3 mensagens
+          </span>
+        </div>
+
+        <div class="conversation">
+
+          <article class="message">
+
+            <div class="message-avatar client-avatar">
+              SC
+            </div>
+
+            <div class="message-content">
+
+              <div class="message-header">
+                <strong>Skyler Crato</strong>
+                <span>14:32</span>
+              </div>
+
+              <div class="message-bubble">
+                <p>
+                  Estamos tentando realizar uma venda, mas o TEF
+                  apresenta erro durante a comunicação com o cartão.
+                </p>
+              </div>
+
+            </div>
+
+          </article>
+
+          <article class="message">
+
+            <div class="message-avatar support-avatar">
+              RA
+            </div>
+
+            <div class="message-content">
+
+              <div class="message-header">
+                <strong>Rodrigo Arruda</strong>
+                <span>14:41</span>
+              </div>
+
+              <div class="message-bubble support-bubble">
+                <p>
+                  Vou validar a configuração do TEF e realizar alguns
+                  testes para identificar em qual etapa a comunicação
+                  está sendo interrompida.
+                </p>
+              </div>
+
+            </div>
+
+          </article>
+
+          <article class="message">
+
+            <div class="message-avatar client-avatar">
+              SC
+            </div>
+
+            <div class="message-content">
+
+              <div class="message-header">
+                <strong>Skyler Crato</strong>
+                <span>14:48</span>
+              </div>
+
+              <div class="message-bubble">
+                <p>
+                  Perfeito. O problema aconteceu novamente agora
+                  durante uma nova tentativa.
+                </p>
+              </div>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </section>
+
+      <section class="content-section reply-section">
+
+        <div class="section-header">
+          <div>
+            <span class="section-eyebrow">RESPOSTA</span>
+            <h2>Adicionar resposta</h2>
+          </div>
+        </div>
+
+        <div class="reply-box">
+
+          <textarea
+            placeholder="Escreva uma resposta para o cliente..."
+            rows="5"
+          ></textarea>
+
+          <div class="reply-footer">
+
+            <span class="reply-hint">
+              A resposta será registrada no histórico do ticket.
+            </span>
+
+            <button
+              class="primary-action"
+              type="button"
+            >
+              <mat-icon>send</mat-icon>
+              Enviar resposta
+            </button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <aside class="ticket-sidebar">
+
+      <section class="sidebar-section">
+
+        <div class="sidebar-section-header">
+          <h2>Detalhes</h2>
+
+          <button
+            class="icon-button"
+            type="button"
+            aria-label="Editar detalhes"
+          >
+            <mat-icon>edit</mat-icon>
+          </button>
+        </div>
+
+        <div class="detail-list">
+
+          <div class="detail-item">
+            <span class="detail-label">Cliente</span>
+
+            <div class="detail-value">
+              <div class="customer-avatar">
+                SC
+              </div>
+
+              <span>Skyler Crato</span>
+            </div>
+          </div>
+
+          <div class="detail-item">
+            <span class="detail-label">Responsável</span>
+
+            <div class="detail-value">
+              <div class="user-avatar">
+                RA
+              </div>
+
+              <span>Rodrigo Arruda</span>
+            </div>
+          </div>
+
+          <div class="detail-item">
+            <span class="detail-label">Categoria</span>
+            <span class="detail-text">TEF / Pagamentos</span>
+          </div>
+
+          <div class="detail-item">
+            <span class="detail-label">Prioridade</span>
+
+            <span class="priority priority-high">
+              <span class="priority-dot"></span>
+              Alta
+            </span>
+          </div>
+
+          <div class="detail-item">
+            <span class="detail-label">Status</span>
+
+            <span class="status status-open">
+              Aberto
+            </span>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="sidebar-section">
+
+        <div class="sidebar-section-header">
+          <h2>SLA</h2>
+        </div>
+
+        <div class="sla-status">
+
+          <div class="sla-icon">
+            <mat-icon>schedule</mat-icon>
+          </div>
+
+          <div class="sla-content">
+            <strong>2h 14min restantes</strong>
+            <span>Primeira resposta</span>
+          </div>
+
+        </div>
+
+        <div class="sla-progress">
+          <span></span>
+        </div>
+
+      </section>
+
+      <section class="sidebar-section">
+
+        <div class="sidebar-section-header">
+          <h2>Informações</h2>
+        </div>
+
+        <div class="detail-list">
+
+          <div class="detail-item">
+            <span class="detail-label">Criado em</span>
+            <span class="detail-text">24 set, 14:32</span>
+          </div>
+
+          <div class="detail-item">
+            <span class="detail-label">Atualizado</span>
+            <span class="detail-text">8 min atrás</span>
+          </div>
+
+          <div class="detail-item">
+            <span class="detail-label">Canal</span>
+            <span class="detail-text">Portal do cliente</span>
+          </div>
+
+        </div>
+
+      </section>
+
+    </aside>
+
+  </div>
+
+</section>
