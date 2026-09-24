@@ -1,1 +1,443 @@
-<p>tickets works!</p>
+<section class="tickets">
+
+  <div class="page-header">
+
+    <div class="page-heading">
+      <span class="eyebrow">ATENDIMENTO</span>
+
+      <h1>Tickets</h1>
+
+      <p>
+        Acompanhe, organize e gerencie as solicitações de atendimento.
+      </p>
+    </div>
+
+    <button class="primary-action" type="button">
+      <mat-icon>add</mat-icon>
+      Novo ticket
+    </button>
+
+  </div>
+
+  <section class="content-panel">
+
+    <div class="toolbar">
+
+      <div class="search-field">
+        <mat-icon>search</mat-icon>
+
+        <input
+          type="text"
+          placeholder="Buscar por ticket, assunto ou cliente"
+        />
+      </div>
+
+      <button class="filter-button" type="button">
+        <mat-icon>tune</mat-icon>
+        Filtros
+      </button>
+
+      <button class="filter-button" type="button">
+        <mat-icon>sort</mat-icon>
+        Ordenar
+      </button>
+
+    </div>
+
+    <div class="filter-summary">
+
+      <div class="result-count">
+        <strong>128 tickets</strong>
+        <span>encontrados</span>
+      </div>
+
+      <div class="active-filters">
+
+        <span class="filter-label">Visualizando:</span>
+
+        <span class="filter-chip">
+          Todos
+          <mat-icon>close</mat-icon>
+        </span>
+
+      </div>
+
+    </div>
+
+    <div class="table-wrapper">
+
+      <table class="tickets-table">
+
+        <thead>
+          <tr>
+            <th>TICKET</th>
+            <th>ASSUNTO</th>
+            <th>CLIENTE</th>
+            <th>PRIORIDADE</th>
+            <th>STATUS</th>
+            <th>RESPONSÁVEL</th>
+            <th>ATUALIZADO</th>
+            <th></th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+
+            <td>
+              <span class="ticket-number">#1024</span>
+            </td>
+
+            <td>
+              <div class="subject-cell">
+                <strong>Falha na comunicação do TEF</strong>
+                <span>Problema durante transação com cartão</span>
+              </div>
+            </td>
+
+            <td>
+              <span class="table-primary">Skyler Crato</span>
+            </td>
+
+            <td>
+              <span class="priority priority-high">
+                <span class="priority-dot"></span>
+                Alta
+              </span>
+            </td>
+
+            <td>
+              <span class="status status-open">
+                Aberto
+              </span>
+            </td>
+
+            <td>
+              <div class="assignee">
+                <div class="assignee-avatar">RA</div>
+                <span>Rodrigo</span>
+              </div>
+            </td>
+
+            <td>
+              <span class="table-secondary">8 min</span>
+            </td>
+
+            <td class="action-cell">
+              <button
+                class="icon-button"
+                type="button"
+                aria-label="Mais opções"
+              >
+                <mat-icon>more_horiz</mat-icon>
+              </button>
+            </td>
+
+          </tr>
+
+          <tr>
+
+            <td>
+              <span class="ticket-number">#1023</span>
+            </td>
+
+            <td>
+              <div class="subject-cell">
+                <strong>Erro na emissão de NFS-e</strong>
+                <span>Município emissor não parametrizado</span>
+              </div>
+            </td>
+
+            <td>
+              <span class="table-primary">Cliente #0016</span>
+            </td>
+
+            <td>
+              <span class="priority priority-high">
+                <span class="priority-dot"></span>
+                Alta
+              </span>
+            </td>
+
+            <td>
+              <span class="status status-progress">
+                Em análise
+              </span>
+            </td>
+
+            <td>
+              <div class="assignee">
+                <div class="assignee-avatar">FM</div>
+                <span>Fábio</span>
+              </div>
+            </td>
+
+            <td>
+              <span class="table-secondary">21 min</span>
+            </td>
+
+            <td class="action-cell">
+              <button
+                class="icon-button"
+                type="button"
+                aria-label="Mais opções"
+              >
+                <mat-icon>more_horiz</mat-icon>
+              </button>
+            </td>
+
+          </tr>
+
+          <tr>
+
+            <td>
+              <span class="ticket-number">#1022</span>
+            </td>
+
+            <td>
+              <div class="subject-cell">
+                <strong>Configuração de terminal adicional</strong>
+                <span>Terminal sem comunicação com o servidor</span>
+              </div>
+            </td>
+
+            <td>
+              <span class="table-primary">Cliente #0028</span>
+            </td>
+
+            <td>
+              <span class="priority priority-medium">
+                <span class="priority-dot"></span>
+                Média
+              </span>
+            </td>
+
+            <td>
+              <span class="status status-resolved">
+                Resolvido
+              </span>
+            </td>
+
+            <td>
+              <div class="assignee">
+                <div class="assignee-avatar">CR</div>
+                <span>Chris</span>
+              </div>
+            </td>
+
+            <td>
+              <span class="table-secondary">42 min</span>
+            </td>
+
+            <td class="action-cell">
+              <button
+                class="icon-button"
+                type="button"
+                aria-label="Mais opções"
+              >
+                <mat-icon>more_horiz</mat-icon>
+              </button>
+            </td>
+
+          </tr>
+
+          <tr>
+
+            <td>
+              <span class="ticket-number">#1021</span>
+            </td>
+
+            <td>
+              <div class="subject-cell">
+                <strong>Divergência no integrador</strong>
+                <span>Diferença identificada nos pagamentos pendentes</span>
+              </div>
+            </td>
+
+            <td>
+              <span class="table-primary">Cliente #0035</span>
+            </td>
+
+            <td>
+              <span class="priority priority-critical">
+                <span class="priority-dot"></span>
+                Crítica
+              </span>
+            </td>
+
+            <td>
+              <span class="status status-progress">
+                Em análise
+              </span>
+            </td>
+
+            <td>
+              <div class="assignee">
+                <div class="assignee-avatar">RA</div>
+                <span>Rodrigo</span>
+              </div>
+            </td>
+
+            <td>
+              <span class="table-secondary">1h</span>
+            </td>
+
+            <td class="action-cell">
+              <button
+                class="icon-button"
+                type="button"
+                aria-label="Mais opções"
+              >
+                <mat-icon>more_horiz</mat-icon>
+              </button>
+            </td>
+
+          </tr>
+
+          <tr>
+
+            <td>
+              <span class="ticket-number">#1020</span>
+            </td>
+
+            <td>
+              <div class="subject-cell">
+                <strong>Certificado digital pendente</strong>
+                <span>Certificado ainda não configurado no terminal</span>
+              </div>
+            </td>
+
+            <td>
+              <span class="table-primary">Cliente #0071</span>
+            </td>
+
+            <td>
+              <span class="priority priority-low">
+                <span class="priority-dot"></span>
+                Baixa
+              </span>
+            </td>
+
+            <td>
+              <span class="status status-open">
+                Aberto
+              </span>
+            </td>
+
+            <td>
+              <div class="assignee">
+                <div class="assignee-avatar">AR</div>
+                <span>Adrielle</span>
+              </div>
+            </td>
+
+            <td>
+              <span class="table-secondary">2h</span>
+            </td>
+
+            <td class="action-cell">
+              <button
+                class="icon-button"
+                type="button"
+                aria-label="Mais opções"
+              >
+                <mat-icon>more_horiz</mat-icon>
+              </button>
+            </td>
+
+          </tr>
+
+          <tr>
+
+            <td>
+              <span class="ticket-number">#1019</span>
+            </td>
+
+            <td>
+              <div class="subject-cell">
+                <strong>Sincronização de parcelas</strong>
+                <span>Tempo de consulta excedido durante replicação</span>
+              </div>
+            </td>
+
+            <td>
+              <span class="table-primary">Cliente #0024</span>
+            </td>
+
+            <td>
+              <span class="priority priority-medium">
+                <span class="priority-dot"></span>
+                Média
+              </span>
+            </td>
+
+            <td>
+              <span class="status status-open">
+                Aberto
+              </span>
+            </td>
+
+            <td>
+              <div class="assignee">
+                <div class="assignee-avatar">ED</div>
+                <span>Edna</span>
+              </div>
+            </td>
+
+            <td>
+              <span class="table-secondary">3h</span>
+            </td>
+
+            <td class="action-cell">
+              <button
+                class="icon-button"
+                type="button"
+                aria-label="Mais opções"
+              >
+                <mat-icon>more_horiz</mat-icon>
+              </button>
+            </td>
+
+          </tr>
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+    <div class="table-footer">
+
+      <span>
+        Exibindo 6 de 128 tickets
+      </span>
+
+      <div class="pagination">
+
+        <button
+          class="pagination-button"
+          type="button"
+          aria-label="Página anterior"
+          disabled
+        >
+          <mat-icon>chevron_left</mat-icon>
+        </button>
+
+        <span class="pagination-current">1</span>
+
+        <button
+          class="pagination-button"
+          type="button"
+          aria-label="Próxima página"
+        >
+          <mat-icon>chevron_right</mat-icon>
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</section>

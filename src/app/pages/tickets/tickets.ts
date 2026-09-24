@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-tickets',
-  imports: [],
+  standalone: true,
+  imports: [MatIconModule],
   templateUrl: './tickets.html',
   styleUrl: './tickets.css',
 })
