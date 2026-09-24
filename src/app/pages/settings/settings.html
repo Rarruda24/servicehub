@@ -1,0 +1,330 @@
+<section class="settings-page">
+
+  <div class="page-header">
+
+    <div>
+      <span class="section-eyebrow">SISTEMA</span>
+      <h1>Configurações</h1>
+      <p>Gerencie as preferências e parâmetros do ServiceHub.</p>
+    </div>
+
+  </div>
+
+  <div class="settings-layout">
+
+    <aside class="settings-navigation">
+
+      <span class="navigation-title">CONFIGURAÇÕES</span>
+
+      <button
+        class="settings-nav-item"
+        [class.active]="activeSection === 'general'"
+        type="button"
+        (click)="selectSection('general')"
+      >
+        <mat-icon>tune</mat-icon>
+        <span>Geral</span>
+      </button>
+
+      <button
+        class="settings-nav-item"
+        [class.active]="activeSection === 'attendance'"
+        type="button"
+        (click)="selectSection('attendance')"
+      >
+        <mat-icon>confirmation_number</mat-icon>
+        <span>Atendimento</span>
+      </button>
+
+      <button
+        class="settings-nav-item"
+        [class.active]="activeSection === 'sla'"
+        type="button"
+        (click)="selectSection('sla')"
+      >
+        <mat-icon>speed</mat-icon>
+        <span>SLA</span>
+      </button>
+
+      <button
+        class="settings-nav-item"
+        [class.active]="activeSection === 'notifications'"
+        type="button"
+        (click)="selectSection('notifications')"
+      >
+        <mat-icon>notifications_none</mat-icon>
+        <span>Notificações</span>
+      </button>
+
+      <button
+        class="settings-nav-item"
+        [class.active]="activeSection === 'users'"
+        type="button"
+        (click)="selectSection('users')"
+      >
+        <mat-icon>manage_accounts</mat-icon>
+        <span>Usuários e permissões</span>
+      </button>
+
+      <button
+        class="settings-nav-item"
+        [class.active]="activeSection === 'integrations'"
+        type="button"
+        (click)="selectSection('integrations')"
+      >
+        <mat-icon>hub</mat-icon>
+        <span>Integrações</span>
+      </button>
+
+    </aside>
+
+    <main class="settings-content">
+
+      @if (activeSection === 'general') {
+
+        <section class="settings-panel">
+
+          <div class="panel-header">
+            <div>
+              <span class="section-eyebrow">GERAL</span>
+              <h2>Preferências do workspace</h2>
+              <p>Defina informações básicas utilizadas pelo ambiente.</p>
+            </div>
+          </div>
+
+          <div class="form-grid">
+
+            <div class="form-field">
+              <label for="workspace-name">Nome do workspace</label>
+
+              <input
+                id="workspace-name"
+                type="text"
+                value="ServiceHub"
+              />
+
+              <span>Nome exibido para os usuários do ambiente.</span>
+            </div>
+
+            <div class="form-field">
+              <label for="timezone">Fuso horário</label>
+
+              <select id="timezone">
+                <option>GMT-03:00 — Brasília</option>
+                <option>GMT-04:00 — Manaus</option>
+                <option>GMT-05:00 — Acre</option>
+              </select>
+
+              <span>Utilizado para registros e indicadores de atendimento.</span>
+            </div>
+
+            <div class="form-field">
+              <label for="language">Idioma</label>
+
+              <select id="language">
+                <option>Português (Brasil)</option>
+                <option>English</option>
+                <option>Español</option>
+              </select>
+
+              <span>Idioma padrão da interface do workspace.</span>
+            </div>
+
+            <div class="form-field">
+              <label for="date-format">Formato de data</label>
+
+              <select id="date-format">
+                <option>DD/MM/AAAA</option>
+                <option>MM/DD/AAAA</option>
+                <option>AAAA-MM-DD</option>
+              </select>
+
+              <span>Formato utilizado nas informações apresentadas.</span>
+            </div>
+
+          </div>
+
+        </section>
+
+      }
+
+      @if (activeSection === 'attendance') {
+
+        <section class="settings-panel">
+
+          <div class="panel-header">
+            <div>
+              <span class="section-eyebrow">ATENDIMENTO</span>
+              <h2>Comportamento dos tickets</h2>
+              <p>Preferências relacionadas ao fluxo de atendimento.</p>
+            </div>
+          </div>
+
+          <div class="setting-list">
+
+            <div class="setting-row">
+
+              <div class="setting-info">
+                <strong>Exigir responsável</strong>
+                <span>
+                  Todo ticket deve possuir um responsável antes do atendimento.
+                </span>
+              </div>
+
+              <button
+                class="toggle"
+                [class.active]="requireAssignee"
+                type="button"
+                [attr.aria-pressed]="requireAssignee"
+                (click)="toggleRequireAssignee()"
+              >
+                <span></span>
+              </button>
+
+            </div>
+
+            <div class="setting-row">
+
+              <div class="setting-info">
+                <strong>Reabrir ticket após resposta do cliente</strong>
+                <span>
+                  Uma nova resposta pode alterar automaticamente o status.
+                </span>
+              </div>
+
+              <button
+                class="toggle"
+                [class.active]="reopenAfterCustomerReply"
+                type="button"
+                [attr.aria-pressed]="reopenAfterCustomerReply"
+                (click)="toggleReopenAfterCustomerReply()"
+              >
+                <span></span>
+              </button>
+
+            </div>
+
+            <div class="setting-row">
+
+              <div class="setting-info">
+                <strong>Notificar alterações de prioridade</strong>
+                <span>
+                  Responsáveis recebem uma notificação quando a prioridade mudar.
+                </span>
+              </div>
+
+              <button
+                class="toggle"
+                [class.active]="notifyPriorityChanges"
+                type="button"
+                [attr.aria-pressed]="notifyPriorityChanges"
+                (click)="toggleNotifyPriorityChanges()"
+              >
+                <span></span>
+              </button>
+
+            </div>
+
+          </div>
+
+        </section>
+
+      }
+
+      @if (activeSection === 'sla') {
+
+        <section class="settings-panel empty-section">
+
+          <div class="empty-icon">
+            <mat-icon>speed</mat-icon>
+          </div>
+
+          <span class="section-eyebrow">SLA</span>
+          <h2>Configurações de SLA</h2>
+          <p>
+            Defina políticas, prazos e regras de acompanhamento dos tickets.
+          </p>
+
+        </section>
+
+      }
+
+      @if (activeSection === 'notifications') {
+
+        <section class="settings-panel empty-section">
+
+          <div class="empty-icon">
+            <mat-icon>notifications_none</mat-icon>
+          </div>
+
+          <span class="section-eyebrow">NOTIFICAÇÕES</span>
+          <h2>Preferências de notificações</h2>
+          <p>
+            Configure quais eventos devem gerar notificações para os usuários.
+          </p>
+
+        </section>
+
+      }
+
+      @if (activeSection === 'users') {
+
+        <section class="settings-panel empty-section">
+
+          <div class="empty-icon">
+            <mat-icon>manage_accounts</mat-icon>
+          </div>
+
+          <span class="section-eyebrow">USUÁRIOS</span>
+          <h2>Usuários e permissões</h2>
+          <p>
+            Gerencie usuários, perfis de acesso e permissões do workspace.
+          </p>
+
+        </section>
+
+      }
+
+      @if (activeSection === 'integrations') {
+
+        <section class="settings-panel empty-section">
+
+          <div class="empty-icon">
+            <mat-icon>hub</mat-icon>
+          </div>
+
+          <span class="section-eyebrow">INTEGRAÇÕES</span>
+          <h2>Integrações</h2>
+          <p>
+            Configure conexões com sistemas e serviços externos.
+          </p>
+
+        </section>
+
+      }
+
+      <div class="settings-actions">
+
+        <button
+          class="secondary-action"
+          type="button"
+        >
+          Cancelar
+        </button>
+
+        <button
+          class="primary-action"
+          type="button"
+          (click)="saveChanges()"
+        >
+          <mat-icon>save</mat-icon>
+          Salvar alterações
+        </button>
+
+      </div>
+
+    </main>
+
+  </div>
+
+</section>

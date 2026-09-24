@@ -27,6 +27,13 @@ export const routes: Routes = [
           ),
       },
       {
+        path: 'clients/:id',
+        loadComponent: () =>
+          import('./pages/client-detail/client-detail').then(
+            (m) => m.ClientDetail
+          ),
+      },
+      {
         path: 'tickets',
         loadComponent: () =>
           import('./pages/tickets/tickets').then(
@@ -38,6 +45,41 @@ export const routes: Routes = [
         loadComponent: () =>
           import('./pages/ticket-detail/ticket-detail').then(
             (m) => m.TicketDetail
+          ),
+      },
+      {
+        path: 'queue',
+        loadComponent: () =>
+          import('./pages/queue/queue').then(
+            (m) => m.Queue
+          ),
+      },
+      {
+        path: 'sla',
+        loadComponent: () =>
+          import('./pages/sla/sla').then(
+            (m) => m.Sla
+          ),
+      },
+      {
+        path: 'reports',
+        loadComponent: () =>
+          import('./pages/reports/reports').then(
+            (m) => m.Reports
+          ),
+      },
+      {
+        path: 'indicators',
+        loadComponent: () =>
+          import('./pages/indicators/indicators').then(
+            (m) => m.Indicators
+          ),
+      },
+      {
+        path: 'settings',
+        loadComponent: () =>
+          import('./pages/settings/settings').then(
+            (m) => m.Settings
           ),
       },
     ],

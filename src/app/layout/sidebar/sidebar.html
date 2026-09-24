@@ -115,7 +115,9 @@
 
       <a
         class="navigation-item"
-        href="javascript:void(0)"
+        routerLink="/settings"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
       >
         <mat-icon>settings</mat-icon>
         <span>Configurações</span>
