@@ -1,0 +1,14 @@
+.application-shell {
+  min-height: 100vh;
+  background: var(--sh-background);
+}
+
+.application-content {
+  min-height: 100vh;
+  margin-left: var(--sh-sidebar-width);
+}
+
+.page-content {
+  min-height: calc(100vh - var(--sh-header-height));
+  padding: 28px;
+}
