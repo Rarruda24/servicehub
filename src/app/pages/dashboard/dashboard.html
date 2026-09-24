@@ -1,1 +1,324 @@
-<p>dashboard works!</p>
+<section class="dashboard">
+
+  <div class="page-header">
+
+    <div>
+      <span class="eyebrow">SERVICE DESK</span>
+
+      <h1>Dashboard</h1>
+
+      <p>
+        Visão geral do atendimento e operação do ServiceHub.
+      </p>
+    </div>
+
+    <button class="primary-action" type="button">
+      <mat-icon>add</mat-icon>
+      Novo ticket
+    </button>
+
+  </div>
+
+
+  <div class="kpi-grid">
+
+    <article class="kpi-card">
+
+      <div class="kpi-header">
+        <span>Tickets totais</span>
+
+        <div class="kpi-icon">
+          <mat-icon>confirmation_number</mat-icon>
+        </div>
+      </div>
+
+      <div class="kpi-value">
+        128
+      </div>
+
+      <div class="kpi-footer positive">
+        <mat-icon>trending_up</mat-icon>
+        <span>12% vs. período anterior</span>
+      </div>
+
+    </article>
+
+
+    <article class="kpi-card">
+
+      <div class="kpi-header">
+        <span>Em aberto</span>
+
+        <div class="kpi-icon">
+          <mat-icon>radio_button_checked</mat-icon>
+        </div>
+      </div>
+
+      <div class="kpi-value">
+        42
+      </div>
+
+      <div class="kpi-footer neutral">
+        <span>33% dos tickets</span>
+      </div>
+
+    </article>
+
+
+    <article class="kpi-card">
+
+      <div class="kpi-header">
+        <span>Em atraso</span>
+
+        <div class="kpi-icon warning">
+          <mat-icon>schedule</mat-icon>
+        </div>
+      </div>
+
+      <div class="kpi-value">
+        8
+      </div>
+
+      <div class="kpi-footer negative">
+        <mat-icon>priority_high</mat-icon>
+        <span>Requer atenção</span>
+      </div>
+
+    </article>
+
+
+    <article class="kpi-card">
+
+      <div class="kpi-header">
+        <span>Resolvidos</span>
+
+        <div class="kpi-icon success">
+          <mat-icon>check_circle_outline</mat-icon>
+        </div>
+      </div>
+
+      <div class="kpi-value">
+        78
+      </div>
+
+      <div class="kpi-footer positive">
+        <mat-icon>trending_up</mat-icon>
+        <span>61% dos tickets</span>
+      </div>
+
+    </article>
+
+  </div>
+
+
+  <div class="dashboard-grid">
+
+
+    <section class="panel tickets-panel">
+
+      <div class="panel-header">
+
+        <div>
+          <h2>Atividade recente</h2>
+          <span>Últimos tickets atualizados</span>
+        </div>
+
+        <button class="text-button" type="button">
+          Ver todos
+          <mat-icon>arrow_forward</mat-icon>
+        </button>
+
+      </div>
+
+
+      <div class="ticket-list">
+
+        <div class="ticket-row">
+
+          <div class="ticket-id">
+            #1024
+          </div>
+
+          <div class="ticket-content">
+            <strong>Falha na comunicação do TEF</strong>
+            <span>Loja 77 · Atualizado há 8 min</span>
+          </div>
+
+          <span class="status status-open">
+            Aberto
+          </span>
+
+        </div>
+
+
+        <div class="ticket-row">
+
+          <div class="ticket-id">
+            #1023
+          </div>
+
+          <div class="ticket-content">
+            <strong>Erro na emissão de NFS-e</strong>
+            <span>Loja 16 · Atualizado há 21 min</span>
+          </div>
+
+          <span class="status status-progress">
+            Em análise
+          </span>
+
+        </div>
+
+
+        <div class="ticket-row">
+
+          <div class="ticket-id">
+            #1022
+          </div>
+
+          <div class="ticket-content">
+            <strong>Configuração de terminal adicional</strong>
+            <span>Loja 28 · Atualizado há 42 min</span>
+          </div>
+
+          <span class="status status-resolved">
+            Resolvido
+          </span>
+
+        </div>
+
+
+        <div class="ticket-row">
+
+          <div class="ticket-id">
+            #1021
+          </div>
+
+          <div class="ticket-content">
+            <strong>Divergência no integrador</strong>
+            <span>Loja 35 · Atualizado há 1h</span>
+          </div>
+
+          <span class="status status-progress">
+            Em análise
+          </span>
+
+        </div>
+
+
+        <div class="ticket-row">
+
+          <div class="ticket-id">
+            #1020
+          </div>
+
+          <div class="ticket-content">
+            <strong>Certificado digital pendente</strong>
+            <span>Loja 71 · Atualizado há 2h</span>
+          </div>
+
+          <span class="status status-open">
+            Aberto
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="panel distribution-panel">
+
+      <div class="panel-header">
+
+        <div>
+          <h2>Distribuição</h2>
+          <span>Status dos tickets</span>
+        </div>
+
+        <button
+          class="icon-button"
+          type="button"
+          aria-label="Mais opções"
+        >
+          <mat-icon>more_horiz</mat-icon>
+        </button>
+
+      </div>
+
+
+      <div class="distribution-content">
+
+        <div class="donut-wrapper">
+
+          <div class="donut">
+
+            <div class="donut-center">
+              <strong>128</strong>
+              <span>tickets</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="legend">
+
+          <div class="legend-item">
+
+            <div class="legend-label">
+              <span class="legend-dot open"></span>
+              Em aberto
+            </div>
+
+            <strong>42</strong>
+
+          </div>
+
+
+          <div class="legend-item">
+
+            <div class="legend-label">
+              <span class="legend-dot progress"></span>
+              Em análise
+            </div>
+
+            <strong>28</strong>
+
+          </div>
+
+
+          <div class="legend-item">
+
+            <div class="legend-label">
+              <span class="legend-dot resolved"></span>
+              Resolvidos
+            </div>
+
+            <strong>58</strong>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="dashboard-footer">
+
+    <div class="footer-info">
+      <mat-icon>sync</mat-icon>
+      <span>Dados atualizados há poucos segundos</span>
+    </div>
+
+    <span class="footer-period">
+      Período: últimos 30 dias
+    </span>
+
+  </div>
+
+</section>
