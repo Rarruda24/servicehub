@@ -1,0 +1,323 @@
+<section class="queue">
+
+  <div class="page-header">
+
+    <div>
+      <span class="section-eyebrow">ATENDIMENTO</span>
+      <h1>Fila de atendimento</h1>
+      <p>Tickets aguardando atendimento pela equipe.</p>
+    </div>
+
+    <div class="header-actions">
+      <button class="secondary-action" type="button">
+        <mat-icon>refresh</mat-icon>
+        Atualizar fila
+      </button>
+    </div>
+
+  </div>
+
+  <section class="queue-summary">
+
+    <article class="summary-item">
+      <div class="summary-icon">
+        <mat-icon>hourglass_empty</mat-icon>
+      </div>
+
+      <div>
+        <span>Aguardando</span>
+        <strong>8</strong>
+      </div>
+    </article>
+
+    <article class="summary-item">
+      <div class="summary-icon warning">
+        <mat-icon>schedule</mat-icon>
+      </div>
+
+      <div>
+        <span>SLA próximo</span>
+        <strong>3</strong>
+      </div>
+    </article>
+
+    <article class="summary-item">
+      <div class="summary-icon danger">
+        <mat-icon>priority_high</mat-icon>
+      </div>
+
+      <div>
+        <span>SLA excedido</span>
+        <strong>1</strong>
+      </div>
+    </article>
+
+    <article class="summary-item">
+      <div class="summary-icon success">
+        <mat-icon>support_agent</mat-icon>
+      </div>
+
+      <div>
+        <span>Em atendimento</span>
+        <strong>6</strong>
+      </div>
+    </article>
+
+  </section>
+
+  <section class="queue-section">
+
+    <div class="section-header">
+
+      <div>
+        <h2>Tickets aguardando atendimento</h2>
+        <span>8 tickets na fila</span>
+      </div>
+
+      <div class="queue-filters">
+
+        <button class="filter-button active" type="button">
+          Todos
+        </button>
+
+        <button class="filter-button" type="button">
+          Alta prioridade
+        </button>
+
+        <button class="filter-button" type="button">
+          SLA crítico
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="queue-list">
+
+      <article class="queue-row critical">
+
+        <div class="ticket-id">
+          <span>#1028</span>
+          <small>Há 1h 42min</small>
+        </div>
+
+        <div class="ticket-info">
+          <strong>Falha na sincronização de dados</strong>
+          <span>Integração</span>
+        </div>
+
+        <div class="client-info">
+          <span class="field-label">Cliente</span>
+          <strong>Northline Services</strong>
+        </div>
+
+        <div class="priority priority-high">
+          <span class="priority-dot"></span>
+          Alta
+        </div>
+
+        <div class="sla sla-danger">
+          <span>SLA</span>
+          <strong>Excedido</strong>
+        </div>
+
+        <button
+          class="assign-button"
+          type="button"
+          aria-label="Assumir ticket"
+        >
+          <mat-icon>arrow_forward</mat-icon>
+        </button>
+
+      </article>
+
+      <article class="queue-row">
+
+        <div class="ticket-id">
+          <span>#1027</span>
+          <small>Há 58min</small>
+        </div>
+
+        <div class="ticket-info">
+          <strong>Usuário sem acesso ao sistema</strong>
+          <span>Acesso e permissões</span>
+        </div>
+
+        <div class="client-info">
+          <span class="field-label">Cliente</span>
+          <strong>Alpha Commerce</strong>
+        </div>
+
+        <div class="priority priority-high">
+          <span class="priority-dot"></span>
+          Alta
+        </div>
+
+        <div class="sla sla-warning">
+          <span>SLA</span>
+          <strong>32min</strong>
+        </div>
+
+        <button
+          class="assign-button"
+          type="button"
+          aria-label="Assumir ticket"
+        >
+          <mat-icon>arrow_forward</mat-icon>
+        </button>
+
+      </article>
+
+      <article class="queue-row">
+
+        <div class="ticket-id">
+          <span>#1026</span>
+          <small>Há 41min</small>
+        </div>
+
+        <div class="ticket-info">
+          <strong>Dados não atualizados no painel</strong>
+          <span>Sincronização</span>
+        </div>
+
+        <div class="client-info">
+          <span class="field-label">Cliente</span>
+          <strong>Vertex Solutions</strong>
+        </div>
+
+        <div class="priority priority-medium">
+          <span class="priority-dot"></span>
+          Média
+        </div>
+
+        <div class="sla">
+          <span>SLA</span>
+          <strong>1h 18min</strong>
+        </div>
+
+        <button
+          class="assign-button"
+          type="button"
+          aria-label="Assumir ticket"
+        >
+          <mat-icon>arrow_forward</mat-icon>
+        </button>
+
+      </article>
+
+      <article class="queue-row">
+
+        <div class="ticket-id">
+          <span>#1025</span>
+          <small>Há 27min</small>
+        </div>
+
+        <div class="ticket-info">
+          <strong>Configuração de novo usuário</strong>
+          <span>Acesso e permissões</span>
+        </div>
+
+        <div class="client-info">
+          <span class="field-label">Cliente</span>
+          <strong>BluePeak Group</strong>
+        </div>
+
+        <div class="priority priority-medium">
+          <span class="priority-dot"></span>
+          Média
+        </div>
+
+        <div class="sla">
+          <span>SLA</span>
+          <strong>1h 42min</strong>
+        </div>
+
+        <button
+          class="assign-button"
+          type="button"
+          aria-label="Assumir ticket"
+        >
+          <mat-icon>arrow_forward</mat-icon>
+        </button>
+
+      </article>
+
+      <article class="queue-row">
+
+        <div class="ticket-id">
+          <span>#1023</span>
+          <small>Há 19min</small>
+        </div>
+
+        <div class="ticket-info">
+          <strong>Relatório com informações divergentes</strong>
+          <span>Relatórios</span>
+        </div>
+
+        <div class="client-info">
+          <span class="field-label">Cliente</span>
+          <strong>Orbit Retail</strong>
+        </div>
+
+        <div class="priority priority-low">
+          <span class="priority-dot"></span>
+          Baixa
+        </div>
+
+        <div class="sla">
+          <span>SLA</span>
+          <strong>3h 12min</strong>
+        </div>
+
+        <button
+          class="assign-button"
+          type="button"
+          aria-label="Assumir ticket"
+        >
+          <mat-icon>arrow_forward</mat-icon>
+        </button>
+
+      </article>
+
+      <article class="queue-row">
+
+        <div class="ticket-id">
+          <span>#1022</span>
+          <small>Há 12min</small>
+        </div>
+
+        <div class="ticket-info">
+          <strong>Solicitação de atualização cadastral</strong>
+          <span>Cadastro</span>
+        </div>
+
+        <div class="client-info">
+          <span class="field-label">Cliente</span>
+          <strong>NovaBase Consulting</strong>
+        </div>
+
+        <div class="priority priority-low">
+          <span class="priority-dot"></span>
+          Baixa
+        </div>
+
+        <div class="sla">
+          <span>SLA</span>
+          <strong>3h 40min</strong>
+        </div>
+
+        <button
+          class="assign-button"
+          type="button"
+          aria-label="Assumir ticket"
+        >
+          <mat-icon>arrow_forward</mat-icon>
+        </button>
+
+      </article>
+
+    </div>
+
+  </section>
+
+</section>
