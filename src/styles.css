@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --sh-primary: #2563eb;
+  --sh-primary-hover: #1d4ed8;
+  --sh-primary-soft: #eff6ff;
+
+  --sh-background: #f6f8fb;
+  --sh-surface: #ffffff;
+  --sh-border: #e5e7eb;
+
+  --sh-text-primary: #111827;
+  --sh-text-secondary: #6b7280;
+  --sh-text-muted: #9ca3af;
+
+  --sh-success: #16a34a;
+  --sh-warning: #d97706;
+  --sh-danger: #dc2626;
+
+  --sh-sidebar-width: 248px;
+  --sh-header-height: 68px;
+
+  --sh-radius-sm: 6px;
+  --sh-radius-md: 10px;
+  --sh-radius-lg: 14px;
+
+  --sh-shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --sh-shadow-md: 0 4px 12px rgba(15, 23, 42, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--sh-background);
+  color: var(--sh-text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
