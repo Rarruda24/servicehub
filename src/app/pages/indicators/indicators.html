@@ -1,0 +1,252 @@
+<section class="indicators-page">
+
+  <div class="page-header">
+
+    <div>
+      <span class="section-eyebrow">GESTÃO</span>
+      <h1>Indicadores</h1>
+      <p>Monitore os principais indicadores da operação de atendimento.</p>
+    </div>
+
+    <div class="header-actions">
+
+      <button class="secondary-action" type="button">
+        <mat-icon>calendar_today</mat-icon>
+        Hoje
+      </button>
+
+      <button class="secondary-action" type="button">
+        <mat-icon>refresh</mat-icon>
+        Atualizar
+      </button>
+
+    </div>
+
+  </div>
+
+  <section class="indicator-summary">
+
+    <article class="indicator-card">
+      <div class="indicator-top">
+        <span>Tickets ativos</span>
+        <mat-icon>confirmation_number</mat-icon>
+      </div>
+
+      <strong>110</strong>
+
+      <div class="indicator-meta">
+        <span class="positive">8 em alta prioridade</span>
+        <span>•</span>
+        <span>102 normais</span>
+      </div>
+    </article>
+
+    <article class="indicator-card">
+      <div class="indicator-top">
+        <span>Tempo médio</span>
+        <mat-icon>schedule</mat-icon>
+      </div>
+
+      <strong>3h 24m</strong>
+
+      <div class="indicator-meta positive">
+        <mat-icon>trending_down</mat-icon>
+        18 min vs. período anterior
+      </div>
+    </article>
+
+    <article class="indicator-card">
+      <div class="indicator-top">
+        <span>SLA cumprido</span>
+        <mat-icon>speed</mat-icon>
+      </div>
+
+      <strong>94,8%</strong>
+
+      <div class="indicator-meta positive">
+        <mat-icon>trending_up</mat-icon>
+        2,1% vs. período anterior
+      </div>
+    </article>
+
+    <article class="indicator-card">
+      <div class="indicator-top">
+        <span>Produtividade</span>
+        <mat-icon>groups</mat-icon>
+      </div>
+
+      <strong>91,6%</strong>
+
+      <div class="indicator-meta">
+        <span>Equipe operacional</span>
+      </div>
+    </article>
+
+  </section>
+
+  <div class="indicators-grid">
+
+    <section class="indicator-panel">
+
+      <div class="panel-header">
+
+        <div>
+          <span class="section-eyebrow">OPERAÇÃO</span>
+          <h2>Capacidade de atendimento</h2>
+          <p>Distribuição da carga atual da equipe.</p>
+        </div>
+
+        <button class="icon-button" type="button" aria-label="Mais opções">
+          <mat-icon>more_horiz</mat-icon>
+        </button>
+
+      </div>
+
+      <div class="capacity-content">
+
+        <div class="capacity-value">
+          <strong>76%</strong>
+          <span>capacidade utilizada</span>
+        </div>
+
+        <div class="capacity-bar">
+          <span style="width: 76%"></span>
+        </div>
+
+        <div class="capacity-scale">
+          <span>Baixa</span>
+          <span>Normal</span>
+          <span>Alta</span>
+        </div>
+
+        <div class="capacity-details">
+
+          <div>
+            <span>Em atendimento</span>
+            <strong>68</strong>
+          </div>
+
+          <div>
+            <span>Disponíveis</span>
+            <strong>14</strong>
+          </div>
+
+          <div>
+            <span>Em pausa</span>
+            <strong>5</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="indicator-panel">
+
+      <div class="panel-header">
+
+        <div>
+          <span class="section-eyebrow">SLA</span>
+          <h2>Acompanhamento</h2>
+          <p>Status dos chamados monitorados.</p>
+        </div>
+
+      </div>
+
+      <div class="sla-list">
+
+        <div class="sla-row">
+          <div>
+            <span class="sla-dot good"></span>
+            <span>Dentro do prazo</span>
+          </div>
+          <strong>82</strong>
+        </div>
+
+        <div class="sla-row">
+          <div>
+            <span class="sla-dot warning"></span>
+            <span>Próximos do limite</span>
+          </div>
+          <strong>19</strong>
+        </div>
+
+        <div class="sla-row">
+          <div>
+            <span class="sla-dot danger"></span>
+            <span>Fora do prazo</span>
+          </div>
+          <strong>9</strong>
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+  <section class="indicator-panel team-panel">
+
+    <div class="panel-header">
+
+      <div>
+        <span class="section-eyebrow">EQUIPE</span>
+        <h2>Indicadores por responsável</h2>
+        <p>Visão operacional da produtividade individual.</p>
+      </div>
+
+      <button class="text-action" type="button">
+        Ver equipe
+        <mat-icon>arrow_forward</mat-icon>
+      </button>
+
+    </div>
+
+    <div class="team-table">
+
+      <div class="table-header">
+        <span>Responsável</span>
+        <span>Ativos</span>
+        <span>Resolvidos</span>
+        <span>Tempo médio</span>
+        <span>SLA</span>
+      </div>
+
+      <div class="table-row">
+        <strong>Mariana Costa</strong>
+        <span>18</span>
+        <span>42</span>
+        <span>2h 16m</span>
+        <span class="sla-good">98,2%</span>
+      </div>
+
+      <div class="table-row">
+        <strong>Lucas Martins</strong>
+        <span>24</span>
+        <span>38</span>
+        <span>2h 54m</span>
+        <span class="sla-good">96,4%</span>
+      </div>
+
+      <div class="table-row">
+        <strong>Camila Oliveira</strong>
+        <span>21</span>
+        <span>35</span>
+        <span>3h 18m</span>
+        <span class="sla-good">94,8%</span>
+      </div>
+
+      <div class="table-row">
+        <strong>Rafael Mendes</strong>
+        <span>27</span>
+        <span>31</span>
+        <span>4h 02m</span>
+        <span class="sla-warning">89,6%</span>
+      </div>
+
+    </div>
+
+  </section>
+
+</section>

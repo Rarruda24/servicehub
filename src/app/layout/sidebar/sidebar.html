@@ -87,7 +87,9 @@
 
       <a
         class="navigation-item"
-        href="javascript:void(0)"
+        routerLink="/reports"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
       >
         <mat-icon>bar_chart</mat-icon>
         <span>Relatórios</span>
@@ -95,7 +97,9 @@
 
       <a
         class="navigation-item"
-        href="javascript:void(0)"
+        routerLink="/indicators"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
       >
         <mat-icon>analytics</mat-icon>
         <span>Indicadores</span>
