@@ -1,1 +1,333 @@
-<p>clients works!</p>
+<section class="clients">
+
+  <div class="page-header">
+
+    <div class="page-heading">
+      <span class="eyebrow">ATENDIMENTO</span>
+
+      <h1>Clientes</h1>
+
+      <p>
+        Gerencie clientes e acompanhe suas informações de atendimento.
+      </p>
+    </div>
+
+    <button class="primary-action" type="button">
+      <mat-icon>add</mat-icon>
+      Novo cliente
+    </button>
+
+  </div>
+
+  <section class="content-panel">
+
+    <div class="toolbar">
+
+      <div class="search-field">
+        <mat-icon>search</mat-icon>
+
+        <input
+          type="text"
+          placeholder="Buscar por nome, documento ou código"
+        />
+      </div>
+
+      <button class="filter-button" type="button">
+        <mat-icon>tune</mat-icon>
+        Filtros
+      </button>
+
+    </div>
+
+    <div class="table-wrapper">
+
+      <table class="clients-table">
+
+        <thead>
+          <tr>
+            <th>CLIENTE</th>
+            <th>DOCUMENTO</th>
+            <th>LOCALIZAÇÃO</th>
+            <th>STATUS</th>
+            <th>ÚLTIMA ATIVIDADE</th>
+            <th></th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+
+            <td>
+              <div class="client-cell">
+
+                <div class="client-avatar">AC</div>
+
+                <div class="client-info">
+                  <strong>Alfa Clean</strong>
+                  <span>Código #000124</span>
+                </div>
+
+              </div>
+            </td>
+
+            <td>
+              <span class="table-primary">12.345.678/0001-90</span>
+            </td>
+
+            <td>
+              <span class="table-primary">São Paulo, SP</span>
+            </td>
+
+            <td>
+              <span class="status status-active">
+                Ativo
+              </span>
+            </td>
+
+            <td>
+              <span class="table-secondary">Hoje, 14:32</span>
+            </td>
+
+            <td class="action-cell">
+
+              <button
+                class="icon-button"
+                type="button"
+                aria-label="Mais opções"
+              >
+                <mat-icon>more_horiz</mat-icon>
+              </button>
+
+            </td>
+
+          </tr>
+
+          <tr>
+
+            <td>
+              <div class="client-cell">
+
+                <div class="client-avatar">MB</div>
+
+                <div class="client-info">
+                  <strong>Maria Bonita</strong>
+                  <span>Código #000118</span>
+                </div>
+
+              </div>
+            </td>
+
+            <td>
+              <span class="table-primary">23.456.789/0001-12</span>
+            </td>
+
+            <td>
+              <span class="table-primary">Curitiba, PR</span>
+            </td>
+
+            <td>
+              <span class="status status-active">
+                Ativo
+              </span>
+            </td>
+
+            <td>
+              <span class="table-secondary">Hoje, 11:18</span>
+            </td>
+
+            <td class="action-cell">
+
+              <button
+                class="icon-button"
+                type="button"
+                aria-label="Mais opções"
+              >
+                <mat-icon>more_horiz</mat-icon>
+              </button>
+
+            </td>
+
+          </tr>
+
+          <tr>
+
+            <td>
+              <div class="client-cell">
+
+                <div class="client-avatar">RJ</div>
+
+                <div class="client-info">
+                  <strong>Restaura Jeans</strong>
+                  <span>Código #000105</span>
+                </div>
+
+              </div>
+            </td>
+
+            <td>
+              <span class="table-primary">34.567.890/0001-45</span>
+            </td>
+
+            <td>
+              <span class="table-primary">Florianópolis, SC</span>
+            </td>
+
+            <td>
+              <span class="status status-pending">
+                Pendente
+              </span>
+            </td>
+
+            <td>
+              <span class="table-secondary">Ontem, 17:05</span>
+            </td>
+
+            <td class="action-cell">
+
+              <button
+                class="icon-button"
+                type="button"
+                aria-label="Mais opções"
+              >
+                <mat-icon>more_horiz</mat-icon>
+              </button>
+
+            </td>
+
+          </tr>
+
+          <tr>
+
+            <td>
+              <div class="client-cell">
+
+                <div class="client-avatar">SK</div>
+
+                <div class="client-info">
+                  <strong>Skyler</strong>
+                  <span>Código #000097</span>
+                </div>
+
+              </div>
+            </td>
+
+            <td>
+              <span class="table-primary">45.678.901/0001-67</span>
+            </td>
+
+            <td>
+              <span class="table-primary">Crato, CE</span>
+            </td>
+
+            <td>
+              <span class="status status-inactive">
+                Inativo
+              </span>
+            </td>
+
+            <td>
+              <span class="table-secondary">18/09/2026</span>
+            </td>
+
+            <td class="action-cell">
+
+              <button
+                class="icon-button"
+                type="button"
+                aria-label="Mais opções"
+              >
+                <mat-icon>more_horiz</mat-icon>
+              </button>
+
+            </td>
+
+          </tr>
+
+          <tr>
+
+            <td>
+              <div class="client-cell">
+
+                <div class="client-avatar">PC</div>
+
+                <div class="client-info">
+                  <strong>Pássaros e Flores</strong>
+                  <span>Código #000091</span>
+                </div>
+
+              </div>
+            </td>
+
+            <td>
+              <span class="table-primary">56.789.012/0001-89</span>
+            </td>
+
+            <td>
+              <span class="table-primary">Campinas, SP</span>
+            </td>
+
+            <td>
+              <span class="status status-active">
+                Ativo
+              </span>
+            </td>
+
+            <td>
+              <span class="table-secondary">16/09/2026</span>
+            </td>
+
+            <td class="action-cell">
+
+              <button
+                class="icon-button"
+                type="button"
+                aria-label="Mais opções"
+              >
+                <mat-icon>more_horiz</mat-icon>
+              </button>
+
+            </td>
+
+          </tr>
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+    <div class="table-footer">
+
+      <span>
+        Exibindo 5 de 128 clientes
+      </span>
+
+      <div class="pagination">
+
+        <button
+          class="pagination-button"
+          type="button"
+          aria-label="Página anterior"
+          disabled
+        >
+          <mat-icon>chevron_left</mat-icon>
+        </button>
+
+        <span class="pagination-current">1</span>
+
+        <button
+          class="pagination-button"
+          type="button"
+          aria-label="Próxima página"
+        >
+          <mat-icon>chevron_right</mat-icon>
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</section>

@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-clients',
-  imports: [],
+  standalone: true,
+  imports: [MatIconModule],
   templateUrl: './clients.html',
   styleUrl: './clients.css',
 })
